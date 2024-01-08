@@ -74,3 +74,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .nav {
+    @apply relative tracking-[1px]
+  }
+  .nav::after {
+    @apply content-[''] bg-highlightYellow h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300
+  }
+  .nav:hover::after {
+    @apply w-full
+  }
+}
