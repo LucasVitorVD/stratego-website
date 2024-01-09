@@ -1,9 +1,9 @@
+import Hero from "@/components/section/Hero";
+
 export default function Home() {
   return (
-    <div>
-      <section>
-        <h1 className="text-highlightYellow font-montserrat">Hello World</h1>
-      </section>
+    <div className="flex flex-1 bg-primary-darkBlue">
+      <Hero />
     </div> 
   )
 }

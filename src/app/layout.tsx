@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={cn("font-montserrat antialiased", inter.className, montserrat.variable, montserrat_alternates.variable)}>
+      <body className={cn("font-montserrat antialiased relative text-primary-textPrimary", inter.className, montserrat.variable, montserrat_alternates.variable)}>
         <Header />
         <main className="flex flex-row flex-1 min-h-screen">
           {children}

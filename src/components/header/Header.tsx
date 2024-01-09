@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-black bg-opacity-25">
+    <header className="bg-black bg-opacity-25 absolute top-0 z-30 w-full">
       <nav className="w-full py-3 px-10">
         <div className="flex items-center justify-around">
           <a href="#" className="nav text-primary-textPrimary text-lg font-bold">INÍCIO</a>
