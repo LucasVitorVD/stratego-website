@@ -5,7 +5,7 @@ export default function Partners() {
   return (
     <section className="section">
       <div className="pl-12 py-12">
-        <h2 className="text-4xl text-highlightYellow font-extrabold relative overflow-hidden after:content-[''] after:block after:bg-white after:w-full after:h-[8px] after:absolute after:right-[-278px] after:top-[56px]">
+        <h2 className="title text-highlightYellow relative overflow-hidden after:content-[''] after:block after:bg-white after:w-full after:h-[8px] after:absolute after:right-[-278px] after:top-[56px]">
           ALGUNS DE NOSSOS CLIENTES <br /> & PARCEIROS
         </h2>
       </div>

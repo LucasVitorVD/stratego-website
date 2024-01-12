@@ -89,4 +89,18 @@
   .section {
     @apply h-[35rem]
   }
+
+  .heroText {
+    @apply text-4xl font-extralight text-primary-textPrimary
+  }
+
+  .title {
+    @apply text-4xl font-extrabold
+  }
+
+  .borderImg {
+    border-bottom: 15px solid transparent;
+    border-image-source: url("/images/grafismos-jr4.png");  
+    border-image-slice: 50;
+  }
 }
