@@ -85,4 +85,8 @@
   .nav:hover::after {
     @apply w-full
   }
+
+  .section {
+    @apply h-[35rem]
+  }
 }
