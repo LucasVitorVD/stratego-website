@@ -98,6 +98,10 @@
     @apply text-4xl font-extrabold
   }
 
+  .title-2 {
+    @apply text-2xl font-extrabold uppercase
+  }
+
   .borderImg {
     border-bottom: 15px solid transparent;
     border-image-source: url("/images/grafismos-jr4.png");  

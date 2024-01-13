@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section className="section py-12">
+    <section className="section flex flex-col pt-12">
       <div className="flex items-center justify-between">
         <div className="flex flex-col w-1/3 gap-1">
           <h3 className="title borderImg w-max pl-12">NOSSOS</h3>
@@ -17,7 +17,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="flex flex-col h-full pt-10">
+      <div className="relative flex flex-col pt-10 after:content-[url('/images/grafismos-jr3-cinza.png')] after:absolute after:scale-[45%] after:top-[-82px] after:right-[-166px]">
         <ul className="flex flex-col flex-1 gap-10 pl-16 list-image-[url(/images/ellipse-yellow.png)]">
           <li className="font-bold text-xl uppercase">
             Acompanhamento Legislativo
@@ -34,7 +34,7 @@ export default function Services() {
             Análise do Cenário Político
           </li>
         </ul>
-        <div className="relative bg-primary-darkBlue p-4 text-center">
+        <div className="bg-primary-darkBlue p-4 text-center">
           <p className="text-8xl text-highlightYellow">+</p>
           <p>CLIQUE PARA TER ACESSO A TODOS OS SERVIÇOS</p>
         </div>

@@ -3,6 +3,7 @@ import './globals.css'
 import { montserrat, montserrat_alternates, inter } from '@/lib/fonts'
 import { cn } from "@/lib/utils"
 import Header from '@/components/header/Header'
+import Footer from '@/components/footer/Footer'
 
 export const metadata: Metadata = {
   title: 'Strategos',
@@ -21,7 +22,7 @@ export default function RootLayout({
         <main className="flex flex-row flex-1 min-h-screen">
           {children}
         </main>
-        <footer></footer>
+        <Footer />
       </body>
     </html>
   )
