@@ -3,13 +3,13 @@ import ListItem from "../listItem/ListItem";
 
 export default function Partners() {
   return (
-    <section className="section">
-      <div className="pl-12 py-12">
-        <h2 className="title text-highlightYellow relative overflow-hidden after:content-[''] after:block after:bg-white after:w-full after:h-[8px] after:absolute after:right-[-278px] after:top-[56px]">
+    <section>
+      <div className="pl-4 py-12 md:pl-12">
+        <h2 className="title text-highlightYellow md:relative md:overflow-hidden md:after:content-[''] md:after:block md:after:bg-white md:after:w-full md:after:h-[8px] md:after:absolute md:after:right-[-278px] md:after:top-[56px]">
           ALGUNS DE NOSSOS CLIENTES <br /> & PARCEIROS
         </h2>
       </div>
-      <ol className="flex items-center w-full px-28">
+      <ol className="flex flex-col gap-14 items-center w-full lg:px-28 lg:flex-row lg:gap-0">
         <ListItem variant="line">
           <PartnerCard 
             imgSrc="/images/shell-logo.png"

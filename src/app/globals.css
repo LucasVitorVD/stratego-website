@@ -86,12 +86,8 @@
     @apply w-full
   }
 
-  .section {
-    @apply h-[35rem]
-  }
-
   .heroText {
-    @apply text-4xl font-extralight text-primary-textPrimary
+    @apply text-base md:text-4xl font-extralight text-primary-textPrimary
   }
 
   .title {

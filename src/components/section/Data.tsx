@@ -2,13 +2,13 @@ import Counter from "@/components/Counter/Counter";
 
 export default function Data() {
   return (
-    <section className="section flex flex-col justify-center items-center py-20">
+    <section className="flex flex-col justify-center items-center py-20">
       <div className="space-y-16">
         <h1 className="text-[2.5rem] font-extrabold text-center">
           OS DADOS NÃO MENTEM!!
         </h1>
 
-        <div className="flex items-center justify-between gap-36">
+        <div className="flex flex-col gap-14 items-center  lg:flex-row lg:gap-36 lg:justify-between">
           <div className="flex flex-col gap-1 items-center">
             <Counter end={100} highlight plusIcon />
             <p className="text-base font-normal">CLIENTES SATISFEITOS</p>

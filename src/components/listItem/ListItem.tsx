@@ -1,7 +1,4 @@
-"use client"
-
 import { ComponentProps } from "react";
-import { useInView } from "react-intersection-observer";
 import { tv, VariantProps } from "tailwind-variants";
 import { twMerge } from "tailwind-merge"
 
@@ -12,7 +9,7 @@ const listItemVariants = tv({
   variants: {
     variant: {
       default: "flex items-center",
-      line: "flex w-full items-center after:content-[''] after:w-full after:h-[8px] after:border-white  after:border after:bg-white after:hidden md:after:inline-block after:relative after:bottom-[100px] after:animate-grow"
+      line: "flex items-center lg:w-full lg:after:content-[''] lg:after:w-full lg:after:h-[8px] lg:after:border-white  lg:after:border lg:after:bg-white lg:after:hidden lg:after:inline-block lg:after:relative lg:after:bottom-[100px] lg:after:animate-grow"
     },
   },
   defaultVariants: {
@@ -22,15 +19,10 @@ const listItemVariants = tv({
 })
 
 export default function ListItem({ variant, ...props }: Props) {
-  const { inView, ref } = useInView({
-    threshold: 0.2,
-  });
-
   return (
     <li 
       className={twMerge(listItemVariants({ variant }))}
       {...props}
-      ref={ref}
     />
   )
 }
