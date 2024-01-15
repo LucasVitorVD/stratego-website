@@ -12,7 +12,7 @@ export default function Services() {
         <div className="flex flex-col self-end w-[65%] mt-8 lg:w-full lg:mt-0">
           <p className="text-center font-bold">Serviço mais procurado</p>
           <ul className="bg-highlightYellow rounded-l-full p-4 list-image-[url(/images/ellipse-blue.png)]">
-            <li className="text-base font-bold ml-7 md:text-2xl">Relações Governamentais</li>
+            <li className="text-2xl font-bold ml-7 md:text-2xl">Relações Governamentais</li>
           </ul>
         </div>
       </div>
