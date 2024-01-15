@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
-    <footer className="space-y-8 py-4 px-14 bg-highlightYellow lg:flex lg:justify-between">
+    <footer className="space-y-8 py-4 px-4 md:px-14 bg-highlightYellow lg:flex lg:justify-between">
       <div className="space-y-4">
         <h4 className="title-2">Contato</h4>
         <p className="text-black">faleconosco@strategosconsultoria.com.br</p>
