@@ -1,6 +1,6 @@
 import Hero from "@/components/section/Hero";
 import Info from "@/components/section/Info";
-import Image from "next/image";
+import Team from "@/components/section/Team";
 
 export default function About() {
   return (
@@ -13,6 +13,7 @@ export default function About() {
         </div>
       </Hero>
       <Info />
+      <Team />
     </div>
   );
 }
