@@ -1,3 +1,4 @@
+import Conduct from "@/components/section/Conduct";
 import Hero from "@/components/section/Hero";
 import Info from "@/components/section/Info";
 import Team from "@/components/section/Team";
@@ -14,6 +15,7 @@ export default function About() {
       </Hero>
       <Info />
       <Team />
+      <Conduct />
     </div>
   );
 }

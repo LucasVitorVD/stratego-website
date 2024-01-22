@@ -9,7 +9,7 @@ const listItemVariants = tv({
   variants: {
     variant: {
       default: "flex items-center",
-      line: "flex items-center lg:w-full lg:after:content-[''] lg:after:w-full lg:after:h-[8px] lg:after:border-white  lg:after:border lg:after:bg-white lg:after:hidden lg:after:inline-block lg:after:relative lg:after:bottom-[100px] lg:after:animate-grow"
+      line: "flex items-center lg:w-full lg:after:content-[''] lg:after:w-full lg:after:h-[8px] lg:after:border-white lg:after:border lg:after:bg-white lg:after:hidden lg:after:inline-block lg:after:-translate-y-16 lg:after:animate-grow"
     },
   },
   defaultVariants: {

@@ -1,4 +1,3 @@
-import { UserRound } from "lucide-react";
 import EmployeeCard from "../card/EmployeeCard";
 
 const employees = [
