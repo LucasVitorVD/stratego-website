@@ -1,61 +1,58 @@
 import Image from "next/image";
 
 export default function Conduct() {
+  const blueSquare = "w-6 h-6 bg-primary-darkBlue inline-block ml-6"
+  const verticalLine = "flex-1 mx-auto border-x-4 border-x-highlightYellow px-1"
+
   return (
-    <section className="grid grid-cols-section">
-      <aside className="bg-highlightYellow">
-        <div className="flex items-center text-primary-darkBlue text-[5rem] font-bold">
-          <p>PO</p>
-        </div>
+    <section className="grid grid-cols-custom">
+      <aside className="bg-highlightYellow text-primary-darkBlue text-[5rem] font-bold">
+        <p>PO</p>
 
-        <div className="flex items-center text-primary-darkBlue text-[5rem] font-bold">
+        <div className="flex items-center">
           <p>SI</p>
-          <span className="w-6 h-6 bg-primary-darkBlue inline-block ml-6"></span>
+          <span className={blueSquare}></span>
         </div>
 
-        <div className="flex items-center text-primary-darkBlue text-[5rem] font-bold">
-          <p>CIO</p>
-        </div>
+        <p>CIO</p>
 
-        <div className="flex items-center text-primary-darkBlue text-[5rem] font-bold">
+        <div className="flex items-center ">
           <p>NA</p>
-          <span className="w-6 h-6 bg-primary-darkBlue inline-block ml-6"></span>
+          <span className={blueSquare}></span>
         </div>
 
-        <div className="flex items-center text-primary-darkBlue text-[5rem] font-bold">
-          <p>MEN</p>
-        </div>
+        <p>MEN</p>
 
-        <div className="flex items-center text-primary-darkBlue text-[5rem] font-bold">
+        <div className="flex items-center ">
           <p>TO</p>
-          <span className="w-6 h-6 bg-primary-darkBlue inline-block ml-6"></span>
+          <span className={blueSquare}></span>
         </div>
       </aside>
-      <div className="grid grid-cols-1 grid-rows-section pt-20 pl-20">
+      <div className="grid grid-cols-1 grid-rows-custom pt-20 pl-20">
         <div className="flex items-center justify-around bg-highlightYellow font-bold text-3xl">
           <p>Missão.</p>
           <p>Visão.</p>
           <p>Valores.</p>
         </div>
         <div className="flex justify-around">
-          <div className="flex flex-col justify-center h-full">
-            <div className="flex-1 mx-auto border-x-4 border-x-highlightYellow px-1"></div>
+          <div className="flex flex-col justify-center h-4/6">
+            <div className={verticalLine}></div>
             <p className="border border-highlightYellow text-sm text-center text-pretty p-2 w-48 font-bold">
               A nossa missão é ser uma empresa capaz de promover a capacitação
               de jovens para o mercado de trabalho e oferecer uma consultoria
               política personalizada e de qualidade.
             </p>
           </div>
-          <div className="flex flex-col justify-center h-full">
-            <div className="flex-1 mx-auto border-x-4 border-x-highlightYellow px-1"></div>
+          <div className="flex flex-col justify-center h-3/5">
+            <div className={verticalLine}></div>
             <p className="border border-highlightYellow text-sm text-center text-pretty p-2 w-48 font-bold">
               Nos tornar uma consultoria consolidada em Relações Governamentais
               e referência em análise política no Brasil.
             </p>
           </div>
 
-          <div className="flex flex-col justify-center h-full">
-            <div className="flex-1 mx-auto border-x-4 border-x-highlightYellow px-1"></div>
+          <div className="flex flex-col justify-center h-4/5">
+            <div className={verticalLine}></div>
             <ul className="border border-highlightYellow text-sm p-2 w-52 list-disc list-inside font-bold">
               <li>Diversidade como propulsora da inovação</li>
               <li>Compromisso com resultados</li>

@@ -10,7 +10,7 @@ export default function Hero({ imageSrc, footer, children }: Props) {
       className="h-screen md:h-[35rem] bg-no-repeat bg-cover bg-bottom"
       style={{ backgroundImage: `url(${imageSrc})` }}
     >
-      <div className="flex flex-col items-center h-full w-full backdrop-blur-[2px]">
+      <div className="flex flex-col items-center h-full w-full bg-primary-darkBlue/70">
         {children}
         {footer && (
           <div className="p-4">

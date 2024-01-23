@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Info() {
   return (
-    <section className="flex flex-wrap items-center justify-center gap-10 py-14">
+    <section className="flex flex-wrap items-center justify-center gap-10 py-20">
       <figure>
         <Image src="/images/logo2.png" width={208} height={208} alt="Logo" />
       </figure>
