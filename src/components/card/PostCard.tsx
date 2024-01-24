@@ -1,28 +1,34 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function PostCard() {
+interface Props {
+  coverImage: string;
+  title: string;
+  id: string | number;
+}
+
+export default function PostCard({ coverImage, title, id }: Props) {
   return (
-    <div>
+    <div className="flex flex-col gap-4 w-80">
       <figure>
         <Image
-          src="http://via.placeholder.com/640x360"
+          src={coverImage}
           alt="Imagem da capa do blog"
           width={350}
           height={350}
         />
-        <figcaption className="mt-3">
-          <Link
-            href="#"
-            className="text-sm font-bold capitalize hover:underline"
-          >
-            O que mudou com a aprovação da “MP dos ministérios”?
-          </Link>
-        </figcaption>
       </figure>
-      <Link href="#" className="text-sm text-highlightYellow font-bold">
-        Ler mais
-      </Link>
+      <div className="flex flex-col gap-4">
+        <Link
+          href="#"
+          className="text-sm font-bold capitalize text-pretty hover:underline"
+        >
+          {title}
+        </Link>
+        <Link href="#" className="nav text-sm text-highlightYellow font-bold">
+          Ler mais
+        </Link>
+      </div>
     </div>
   );
 }
