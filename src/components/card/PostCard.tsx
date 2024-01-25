@@ -20,12 +20,12 @@ export default function PostCard({ coverImage, title, id }: Props) {
       </figure>
       <div className="flex flex-col gap-4">
         <Link
-          href="#"
+          href={`/blog/post/${id}`}
           className="text-sm font-bold capitalize text-pretty hover:underline"
         >
           {title}
         </Link>
-        <Link href="#" className="nav text-sm text-highlightYellow font-bold">
+        <Link href={`/blog/post/${id}`} className="nav text-sm text-highlightYellow font-bold">
           Ler mais
         </Link>
       </div>
