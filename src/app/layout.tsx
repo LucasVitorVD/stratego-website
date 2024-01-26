@@ -4,6 +4,7 @@ import { montserrat, montserrat_alternates, inter } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
   title: "Strategos",
@@ -29,6 +30,7 @@ export default function RootLayout({
         <main className="flex flex-1 flex-col bg-primary-darkBlue">
           {children}
         </main>
+        <Toaster />
         <Footer />
       </body>
     </html>
