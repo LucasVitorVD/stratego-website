@@ -87,11 +87,11 @@
   }
 
   .heroText {
-    @apply text-4xl md:text-3xl lg:text-4xl font-extralight text-primary-textPrimary
+    @apply text-3xl md:text-4xl font-extralight text-primary-textPrimary
   }
 
   .title {
-    @apply text-4xl font-extrabold
+    @apply text-3xl md:text-4xl font-extrabold
   }
 
   .title-2 {

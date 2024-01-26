@@ -9,7 +9,7 @@ export default function Blog() {
   return (
     <div>
       <Hero imageSrc="/images/congresso-nacional-2.jpg">
-        <div className="flex flex-col flex-1 items-center justify-between py-16 px-10 w-full lg:flex-row">
+        <div className="flex flex-col flex-1 items-center justify-between gap-10 py-16 px-10 w-full lg:flex-row lg:gap-0">
           <h1 className="font-bold text-4xl underline decoration-highlightYellow decoration-solid decoration-4 underline-offset-4">
             Blog
           </h1>

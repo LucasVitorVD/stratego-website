@@ -6,7 +6,7 @@ import Team from "@/components/section/Team";
 export default function About() {
   return (
     <div>
-      <Hero imageSrc="/images/congresso-nacional-3.jpg" footer>
+      <Hero imageSrc="/images/congresso-nacional-3.jpg" footer screen>
         <div className="flex flex-1 items-center p-10 w-full md:pl-16">
           <h1 className="font-montserrat_alt font-bold text-4xl underline decoration-highlightYellow decoration-solid decoration-4 underline-offset-4">
             QUEM SOMOS?

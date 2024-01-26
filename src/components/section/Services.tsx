@@ -12,7 +12,7 @@ export default function Services() {
         <div className="flex flex-col self-end w-[65%] mt-8 lg:w-full lg:mt-0">
           <p className="text-center font-bold">Serviço mais procurado</p>
           <ul className="bg-highlightYellow rounded-l-full p-4 list-image-[url(/images/ellipse-blue.png)]">
-            <li className="text-2xl font-bold ml-7 md:text-2xl">Relações Governamentais</li>
+            <li className="text-xl font-bold ml-7 md:text-2xl">Relações Governamentais</li>
           </ul>
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function Services() {
           <li className="font-bold text-xl uppercase">
             Acompanhamento Legislativo
             <ul className="list-disc">
-              <li className="ml-8 mt-4 font-extralight uppercase text-sm">
+              <li className="ml-4 mt-4 font-extralight uppercase text-sm md:ml-8">
                 Monitoramento de proposições que estão em trâmite
               </li>
             </ul>
