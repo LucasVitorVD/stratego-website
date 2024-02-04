@@ -1,11 +1,20 @@
+"use client"
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="space-y-8 py-4 px-4 md:px-14 bg-highlightYellow lg:flex lg:justify-between">
-      <div className="space-y-4">
+    <footer className="space-y-8 py-4 px-4 md:px-14 bg-highlightYellow lg:flex lg:justify-between lg:items-baseline">
+      <motion.div 
+        className="space-y-4"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: 0.2, ease: "easeInOut" }}
+        viewport={{ once: true }}
+      >
         <h4 className="title-2">Contato</h4>
         <p className="text-black">faleconosco@strategosconsultoria.com.br</p>
         <p className="text-black">+55 61 99640-9153</p>
@@ -21,9 +30,15 @@ export default function Footer() {
           </Button>
           <p>Entre em contato conosco <br /> através do nosso WhatsApp</p>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="space-y-4">
+      <motion.div 
+        className="space-y-4"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: 0.3, ease: "easeInOut" }}
+        viewport={{ once: true }}
+      >
         <p className="title-2 text-primary-darkBlue">REDES</p>
         <ul className="list-none space-y-4">
           <li className="flex">
@@ -67,15 +82,21 @@ export default function Footer() {
             LinkedIn
           </li>
         </ul>
-      </div>
+      </motion.div>
 
-      <div className="space-y-4">
+      <motion.div 
+        className="space-y-4"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: 0.4, ease: "easeInOut" }}
+        viewport={{ once: true }}
+      >
         <p className="title-2">ASSINE A NOSSA NEWSLETTER</p>
         <form className="space-y-4">
           <Input placeholder="E-mail" type="email" className="bg-secondary-lightGray text-lg text-primary-darkBlue placeholder:text-primary-darkBlue" required />
           <Button type="submit" className="font-bold text-highlightYellow">INSCREVER-SE</Button>
         </form>
-      </div>
+      </motion.div>
     </footer>
   );
 }

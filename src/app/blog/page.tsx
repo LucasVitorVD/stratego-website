@@ -2,17 +2,17 @@ import Posts from "@/components/section/Posts";
 import PostCard from "@/components/card/PostCard";
 import Hero from "@/components/section/Hero";
 import { posts } from "@/lib/data";
+import PageWrapper from "@/components/page-wrapper/PageWrapper";
+import Title from "@/components/title/Title";
 
 export default function Blog() {
   const recentPosts = posts.slice(0, 2);
 
   return (
-    <div>
+    <PageWrapper>
       <Hero imageSrc="/images/congresso-nacional-2.jpg">
         <div className="flex flex-col flex-1 items-center justify-between gap-10 py-16 px-10 w-full lg:flex-row lg:gap-0">
-          <h1 className="font-bold text-4xl underline decoration-highlightYellow decoration-solid decoration-4 underline-offset-4">
-            Blog
-          </h1>
+          <Title text="Blog" />
 
           <div className="flex flex-col items-center gap-8">
             <p className="text-2xl text-highlightYellow font-bold font-montserrat_alt">
@@ -21,12 +21,13 @@ export default function Blog() {
 
             <div className="flex flex-col items-center gap-16 lg:flex-row">
               {recentPosts.length > 0 &&
-                recentPosts.map((post) => (
+                recentPosts.map((post, i) => (
                   <PostCard
                     key={post.id}
                     title={post.title}
                     coverImage={post.coverImage}
                     id={post.id}
+                    index={i}
                   />
                 ))}
             </div>
@@ -35,6 +36,6 @@ export default function Blog() {
       </Hero>
 
       <Posts />
-    </div>
+    </PageWrapper>
   );
 }

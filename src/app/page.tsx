@@ -2,10 +2,11 @@ import Data from "@/components/section/Data";
 import Hero from "@/components/section/Hero";
 import Partners from "@/components/section/Partners";
 import Services from "@/components/section/Services";
+import PageWrapper from "@/components/page-wrapper/PageWrapper";
 
 export default function Home() {
   return (
-    <div>
+    <PageWrapper>
       <Hero imageSrc="/images/congresso-brasil.jpg" footer screen>
         <div className="flex flex-col flex-1 items-start justify-center gap-36 md:flex-row md:items-center lg:gap-28">
           <p className="heroText">
@@ -21,6 +22,6 @@ export default function Home() {
       <Data />
       <Partners />
       <Services />
-    </div>
+    </PageWrapper>
   );
 }

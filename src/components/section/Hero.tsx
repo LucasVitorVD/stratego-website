@@ -10,7 +10,7 @@ interface Props {
 export default function Hero({ imageSrc, footer, screen, children }: Props) {
   return (
     <section
-      className={`${screen && 'h-screen'} lg:h-[35rem] bg-no-repeat bg-cover bg-bottom"`}
+      className={`${screen && 'h-screen'} lg:h-[35rem] bg-no-repeat bg-cover bg-center"`}
       style={{ backgroundImage: `url(${imageSrc})` }}
     >
       <div className="flex flex-col items-center h-full w-full bg-primary-darkBlue/70">

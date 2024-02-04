@@ -2,10 +2,11 @@ import ContactForm from "@/components/contact-form/form";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Mail, MapPin } from "lucide-react";
+import PageWrapper from "@/components/page-wrapper/PageWrapper";
 
 export default function Contact() {
   return (
-    <div className="container lg:h-screen">
+    <PageWrapper className="container lg:h-screen">
       <section className="grid grid-cols-1 place-content-center gap-10 h-full py-20 lg:grid-cols-2 lg:gap-0 lg:py-0">
         <div>
           <div className="flex flex-col gap-4 items-center">
@@ -57,6 +58,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </div>
+    </PageWrapper>
   );
 }

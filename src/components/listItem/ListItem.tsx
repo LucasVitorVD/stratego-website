@@ -1,8 +1,14 @@
+"use client"
+
 import { ComponentProps } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 import { twMerge } from "tailwind-merge"
+import { motion } from "framer-motion";
+import { staggerAnimation } from "@/lib/utils";
 
-type Props = ComponentProps<'li'> & VariantProps<typeof listItemVariants> & {}
+type Props = ComponentProps<'li'> & VariantProps<typeof listItemVariants> & {
+  index?: number
+}
 
 const listItemVariants = tv({
   base: "flex items-center",
@@ -18,11 +24,17 @@ const listItemVariants = tv({
   }
 })
 
-export default function ListItem({ variant, ...props }: Props) {
+export default function ListItem({ variant, index, children }: Props) {
   return (
-    <li 
+    <motion.li
       className={twMerge(listItemVariants({ variant }))}
-      {...props}
-    />
+      variants={staggerAnimation}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      custom={index}
+    >
+      {children}
+    </motion.li>
   )
 }

@@ -1,8 +1,13 @@
+"use client"
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Info() {
   return (
-    <section className="flex flex-wrap items-center justify-center gap-10 py-20">
+    <motion.section 
+      className="flex flex-wrap items-center justify-center gap-10 py-20"
+    >
       <figure>
         <Image src="/images/logo2.png" width={208} height={208} alt="Logo" />
       </figure>
@@ -39,6 +44,6 @@ export default function Info() {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

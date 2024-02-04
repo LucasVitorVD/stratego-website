@@ -42,6 +42,7 @@ export default function Team() {
             key={i}
             name={employee.name}
             activity={employee.activity}
+            index={i}
           />
         ))}
       </div>

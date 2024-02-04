@@ -1,7 +1,7 @@
 "use client";
 
 import { CountUp } from "use-count-up";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 interface Props {
   end: number;
@@ -16,18 +16,17 @@ export default function Counter({
   highlight,
   plusIcon,
 }: Props) {
-  const { inView, ref } = useInView({
-    threshold: 0.2,
-  });
-
   return (
-    <span
+    <motion.span
       data-highlight={highlight}
       className="data-[highlight=true]:text-highlightYellow text-6xl font-bold"
-      ref={ref}
+      initial={{ opacity: 0, y: 75 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.5, type: "spring" }}
     >
       {plusIcon && <span>+</span>}
-      {inView && <CountUp isCounting={true} start={0} end={end} duration={duration} />}
-    </span>
+      <CountUp isCounting={true} start={0} end={end} duration={duration} />
+    </motion.span>
   );
 }

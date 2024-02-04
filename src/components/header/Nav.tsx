@@ -4,13 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { tv } from "tailwind-variants";
 import { twMerge } from "tailwind-merge";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 interface Props {
   setOpenModal?: React.Dispatch<boolean>
 }
 
 const linkVariants = tv({
-  base: "nav text-primary-textPrimary text-lg font-bold",
+  base: "relative text-primary-textPrimary text-lg font-bold",
   variants: {
     variant: {
       default: "nav text-primary-textPrimary text-lg font-bold",
@@ -60,6 +62,8 @@ const links: LinkProps[] = [
 ];
 
 export default function Nav({ setOpenModal }: Props) {
+  const path = usePathname()
+
   return (
     <nav className="w-full mt-10 md:mt-0 md:px-10">
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-around md:gap-0">
@@ -70,6 +74,12 @@ export default function Nav({ setOpenModal }: Props) {
             className={twMerge(linkVariants({ variant: link.variant }))}
             onClick={() => setOpenModal!(false)}
           >
+            {link.href === path && typeof link.content === "string" && (
+              <motion.span 
+                className="bg-highlightYellow h-[3px] w-full left-0 top-full rounded-xl absolute" 
+                layoutId="underline"
+              />
+            )}
             {link.content}
           </Link>
         ))}

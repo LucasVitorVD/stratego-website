@@ -1,13 +1,26 @@
+"use client"
+
 import { UserRound } from "lucide-react";
+import { motion } from "framer-motion";
+import { staggerAnimation } from "@/lib/utils";
 
 interface Props {
   name: string,
-  activity: string
+  activity: string,
+  index?: number
 }
 
-export default function EmployeeCard({ name, activity }: Props) {
+export default function EmployeeCard({ name, activity, index }: Props) {
   return (
-    <div className="flex flex-col items-center gap-4">
+    <motion.div 
+      className="flex flex-col items-center gap-4"
+      variants={staggerAnimation}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      custom={index}
+      whileHover={{ scale: 1.1 }}
+    >
       <div className="flex items-center justify-center h-64 w-64 rounded-full bg-gray-400">
         <UserRound size={150} />
       </div>
@@ -15,6 +28,6 @@ export default function EmployeeCard({ name, activity }: Props) {
         <p>{name}</p>
         <p className="text-highlightYellow w-[196px]">{activity}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }

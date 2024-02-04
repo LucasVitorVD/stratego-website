@@ -1,15 +1,26 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { staggerAnimation } from "@/lib/utils";
 
 interface Props {
   coverImage: string;
   title: string;
   id: string | number;
+  index?: number
 }
 
-export default function PostCard({ coverImage, title, id }: Props) {
+export default function PostCard({ coverImage, title, id, index }: Props) {
   return (
-    <div className="flex flex-col gap-4 w-80">
+    <motion.div 
+      className="flex flex-col gap-4 w-80"
+      variants={staggerAnimation}
+      initial="initial"
+      animate="animate"
+      custom={index}
+    >
       <figure>
         <Image
           src={coverImage}
@@ -29,6 +40,6 @@ export default function PostCard({ coverImage, title, id }: Props) {
           Ler mais
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }
