@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <footer className="space-y-8 py-4 px-4 md:px-14 bg-highlightYellow lg:flex lg:justify-between lg:items-baseline">
-      <motion.div 
+      <motion.div
         className="space-y-4"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -28,11 +28,35 @@ export default function Footer() {
               className="rounded-full"
             />
           </Button>
-          <p>Entre em contato conosco <br /> através do nosso WhatsApp</p>
+          <p>
+            Entre em contato conosco <br /> através do nosso WhatsApp
+          </p>
         </div>
+        <p>
+          Design feito por:{" "}
+          <a
+            href="https://www.linkedin.com/in/eumarcelie/"
+            target="_blank"
+            rel="external"
+            className="underline text-blue-700"
+          >
+            Marcelo Marques
+          </a>
+        </p>
+        <p>
+          Desenvolvido por:{" "}
+          <a
+            href="https://www.linkedin.com/in/lucas-vitor-472026210/"
+            target="_blank"
+            rel="external"
+            className="underline text-blue-700"
+          >
+            Lucas Vitor
+          </a>
+        </p>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className="space-y-4"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +108,7 @@ export default function Footer() {
         </ul>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className="space-y-4"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -93,8 +117,15 @@ export default function Footer() {
       >
         <p className="title-2">ASSINE A NOSSA NEWSLETTER</p>
         <form className="space-y-4">
-          <Input placeholder="E-mail" type="email" className="bg-secondary-lightGray text-lg text-primary-darkBlue placeholder:text-primary-darkBlue" required />
-          <Button type="submit" className="font-bold text-highlightYellow">INSCREVER-SE</Button>
+          <Input
+            placeholder="E-mail"
+            type="email"
+            className="bg-secondary-lightGray text-lg text-primary-darkBlue placeholder:text-primary-darkBlue"
+            required
+          />
+          <Button type="submit" className="font-bold text-highlightYellow">
+            INSCREVER-SE
+          </Button>
         </form>
       </motion.div>
     </footer>

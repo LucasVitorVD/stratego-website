@@ -20,10 +20,12 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        "custom": "1fr 5fr"
+        "mobile-cols": "1fr",
+        "large-screens-cols": "1fr 5fr"
       },
       gridTemplateRows: {
-        "custom": "1fr 3fr 1fr"
+        "mobile-rows": "1fr",
+        "large-screens-rows": "1fr 3fr 1fr"
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)", ...fontFamily.sans],

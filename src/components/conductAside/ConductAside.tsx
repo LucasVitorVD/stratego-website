@@ -6,7 +6,7 @@ export default function ConductAside() {
   const blueSquare = "w-6 h-6 bg-primary-darkBlue inline-block ml-6"
 
   return (
-    <aside className="bg-highlightYellow text-primary-darkBlue text-[5rem] font-bold overflow-hidden">
+    <aside className="hidden bg-highlightYellow text-primary-darkBlue text-[5rem] font-bold overflow-hidden lg:block">
       <motion.p
         initial={{ opacity: 0, x: 20 }}
         whileInView={{ opacity: 1, x: 0 }}
